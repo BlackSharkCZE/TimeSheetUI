@@ -1,0 +1,19 @@
+{
+	"rows": [
+		{
+			"id": 1,
+			"firstName": "Pavel",
+			"lastName": "Jonas"
+		},
+		{
+			"id": 2,
+			"firstName": "George",
+			"lastName": "Lucas"
+		}
+	],
+	"paginator": {
+		"pageCount": 200,
+		"itemsPerPage": 1,
+		"currentPage": 78
+	}
+}

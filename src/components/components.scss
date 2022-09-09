@@ -1,0 +1,53 @@
+$component-font-family: arial sans-serif;
+$component-font-size: 0.9em !default;
+$component-text-color: #575757 !default;
+$component-border-color: #575757 !default;
+$component-label-color: #575757 !default;
+
+$bs-table-label-color: #869198;
+$bs-table-label-background: #383838;
+$bs-table-background: #2a2a2a;
+$bs-table-color: #869198;
+$bs-table-color-hover: #303030;
+$bs-table-color-selected: #223e75;
+$bs-table-color-selected-hover: #294b8e;
+
+$bs-table-border-color: #373737;
+$bs-table-filter-input-background: #2a2a2a;
+$bs-table-filter-input-hover-border-color: #3a5977;
+$bs-table-filter-input-color: #869198;
+
+$bs-primary: #11998e;
+$bs-secondary: #38ef7d;
+$bs-white: #fff;
+$bs-gray: #9b9b9b;
+
+$bs-error-dark: #5e2020;
+$bs-error-light: #e32141;
+$bs-error-text: #e32141;
+
+
+@mixin baseComponentText() {
+  font-family: $component-font-family;
+  font-size: $component-font-size;
+  color: $component-text-color;
+
+}
+
+@mixin baseComponentSetup() {
+  font-family: $component-font-family;
+  font-size: $component-font-size;
+  color: $component-text-color;
+  padding: .1em .3em;
+}
+
+@mixin componentBorder() {
+  border: 1px solid $component-border-color;
+  border-radius: 0;
+  outline: none;
+}
+
+@mixin component() {
+  @include baseComponentSetup();
+  @include componentBorder();
+}

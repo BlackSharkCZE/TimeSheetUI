@@ -1,0 +1,21 @@
+@import "variables";
+
+@mixin container-shadow {
+  -webkit-box-shadow: 5px 5px 8px -4px #212b34;
+  box-shadow: 5px 5px 8px -4px #212b34;
+}
+
+@mixin input-class {
+  border: 1px solid $bs-table-border-color;
+  background-color: $bs-table-filter-input-background;
+  color: $bs-table-filter-input-color;
+  box-sizing: border-box;
+  padding: 1px 4px 1px 4px;
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+
+  &:focus {
+    border-color: $bs-table-filter-input-hover-border-color;
+  }
+}

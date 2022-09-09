@@ -1,0 +1,18 @@
+@import "custom-colors";
+
+@mixin dark-blue-gradient() {
+  background: $black-coral;
+  background: linear-gradient(0deg, $black-coral 0%, $blue-yonder 100%);
+}
+
+@mixin dark-gray-gradient() {
+  background: $gray5;
+  background: linear-gradient(0deg, $gray5 0%, $gray4 100%);
+}
+
+@mixin breeze-gradient() {
+  background: $gray5;
+  background: linear-gradient(180deg, $breeze-light 0%, $breeze-dark 100%);
+}
+
+
